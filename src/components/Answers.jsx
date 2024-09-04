@@ -23,10 +23,7 @@ export default function Answers({
           cssClass = 'selected';
         }
 
-        if (
-          (answerState === 'correct' || answerState === 'wrong') &&
-          isSelected
-        ) {
+        if (['correct', 'wrong'].includes(answerState) && isSelected) {
           cssClass = answerState;
         }
 
